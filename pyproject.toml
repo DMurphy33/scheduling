@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scheduling"
+version = "0.0.1"
+authors = [
+    {name = "Dennis Murphy", email = "dennismurphyjr33@gmail.com"}
+]
+readme = "README.md"
+description = "App for scheduling shifts based on times people are unavailable or required"
+requires-python = ">= 3.10"
+dependencies = [
+    "pandas",
+    "python-constraint",
+]
+
+[project.optional-dependencies]
+web = ["streamlit"]
